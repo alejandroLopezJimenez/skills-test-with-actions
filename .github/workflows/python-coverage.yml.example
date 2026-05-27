@@ -40,3 +40,6 @@ jobs:
 
       - name: Fail if below threshold
         run: coverage report --fail-under=90
+
+      - name: Run tests with coverage
+        run: pytest --cov=src
